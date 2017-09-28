@@ -1,64 +1,40 @@
-//
-//  ContainerViewController.swift
-//  ACRide
-//
-//  Created by Toni Albuquerque on 26/09/17.
-//  Copyright © 2017 acalbuquerque. All rights reserved.
-//
-
 import UIKit
 import QuartzCore
-enum SlideOutState {
-    case collapsed
-    case leftPanelExpaned
-}
 
-enum ShowWichVC {
-    case homeVC
-    case paymentVC
+protocol ContainerViewControllerProtocols: class {
+    func toogleLeftPanel()
+    func addLeftPanelViewController()
+    func animateLeftPanel(shouldExpand: Bool)
 }
-var showVC: ShowWichVC = .homeVC
 
 class ContainerViewController: UIViewController {
-    var homeVC: HomeViewController!
+    
+    enum SlideOutState {
+        case collapsed
+        case leftPanelExpaned
+    }
+    enum ShowWichVC {
+        case homeVC
+        case paymentVC
+    }
+
+    var showVC: ShowWichVC = .homeVC
     var centerController:UIViewController!
+    var homeVC: HomeViewController!
+    var leftVC: LeftSidePanelViewController!
+    var isHidden = false
+    var tap: UITapGestureRecognizer!
     var currentState: SlideOutState = .collapsed {
         didSet {
             let shouldShowShadow = (currentState != .collapsed)
             shouldShowShadowForCenterVC(shouldShowShadow)
         }
     }
-    var leftVC: LeftSidePanelViewController!
-    var isHidden = false
     let centerPanelExpandedOffset: CGFloat = 100
-    var tap: UITapGestureRecognizer!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         initCenter(screen: showVC)
-    }
-    
-    func initCenter(screen: ShowWichVC) {
-        
-        var presentingController: UIViewController
-        showVC = screen
-        
-        if homeVC == nil {
-            homeVC = UIStoryboard.homeViewController()
-            homeVC.delegate = self
-        }
-        
-        presentingController = homeVC
-        
-        if let con = centerController {
-            con.view.removeFromSuperview()
-            con.removeFromParentViewController()
-        }
-        centerController = presentingController
-        
-        view.addSubview(centerController.view)
-        addChildViewController(centerController)
-        centerController.didMove(toParentViewController: self)
     }
     
     override var preferredStatusBarUpdateAnimation: UIStatusBarAnimation{
@@ -68,9 +44,27 @@ class ContainerViewController: UIViewController {
     override var prefersStatusBarHidden: Bool{
         return isHidden
     }
+    
+    func initCenter(screen: ShowWichVC) {
+        var presentingController: UIViewController
+        showVC = screen
+        if homeVC == nil {
+            homeVC = UIStoryboard.homeViewController()
+            homeVC.delegate = self
+        }
+        presentingController = homeVC
+        if let con = centerController {
+            con.view.removeFromSuperview()
+            con.removeFromParentViewController()
+        }
+        centerController = presentingController
+        view.addSubview(centerController.view)
+        addChildViewController(centerController)
+        centerController.didMove(toParentViewController: self)
+    }
 }
 
-extension ContainerViewController: CenterVCDelegate {
+extension ContainerViewController: ContainerViewControllerProtocols {
     
     func toogleLeftPanel() {
         let notAlreadyExpanded = (currentState != .leftPanelExpaned)
@@ -86,13 +80,7 @@ extension ContainerViewController: CenterVCDelegate {
             addChildSidePanelViewController(leftVC!)
         }
     }
-    
-    func addChildSidePanelViewController(_ sidePanelController: LeftSidePanelViewController) {
-        view.insertSubview(sidePanelController.view, at: 0)
-        addChildViewController(sidePanelController)
-        sidePanelController.didMove(toParentViewController: self)
-    }
-    
+
     @objc func animateLeftPanel(shouldExpand: Bool) {
         if shouldExpand {
             isHidden = !isHidden
@@ -112,6 +100,15 @@ extension ContainerViewController: CenterVCDelegate {
                 }
             })
         }
+    }
+}
+
+extension ContainerViewController {
+    
+    func addChildSidePanelViewController(_ sidePanelController: LeftSidePanelViewController) {
+        view.insertSubview(sidePanelController.view, at: 0)
+        addChildViewController(sidePanelController)
+        sidePanelController.didMove(toParentViewController: self)
     }
     
     func animateCenterPanelXPosition(targetPosition: CGFloat, completion: ((Bool) -> Void)! = nil) {
