@@ -1,6 +1,0 @@
-framework module Pods_ACRideTests {
-  umbrella header "Pods-ACRideTests-umbrella.h"
-
-  export *
-  module * { export * }
-}
