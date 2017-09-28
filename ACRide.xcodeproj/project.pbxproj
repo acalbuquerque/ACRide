@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		5AA52A820AA7BE6D890C56BF /* Pods_ACRide.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41B05D66BECA688BC871C57F /* Pods_ACRide.framework */; };
 		645BAE4A0A057080A22C9548 /* Pods_ACRideTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 835C3EB2733577B3FE3AD80E /* Pods_ACRideTests.framework */; };
-		751A05961F7C43090050F69F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 751A05951F7C43090050F69F /* GoogleService-Info.plist */; };
 		756342FB1F7AC3C80080EDE4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 756342FA1F7AC3C80080EDE4 /* AppDelegate.swift */; };
 		756342FD1F7AC3C80080EDE4 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 756342FC1F7AC3C80080EDE4 /* HomeViewController.swift */; };
 		756343001F7AC3C80080EDE4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 756342FE1F7AC3C80080EDE4 /* Main.storyboard */; };
@@ -41,7 +40,6 @@
 		1F2A8B7AA65B488FEFA573CB /* Pods-ACRideTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ACRideTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ACRideTests/Pods-ACRideTests.debug.xcconfig"; sourceTree = "<group>"; };
 		3F21D1C7BCC3473BB5C73B23 /* Pods-ACRideTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ACRideTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ACRideTests/Pods-ACRideTests.release.xcconfig"; sourceTree = "<group>"; };
 		41B05D66BECA688BC871C57F /* Pods_ACRide.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ACRide.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		751A05951F7C43090050F69F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		756342F71F7AC3C80080EDE4 /* ACRide.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ACRide.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		756342FA1F7AC3C80080EDE4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		756342FC1F7AC3C80080EDE4 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -128,7 +126,6 @@
 				756343011F7AC3C80080EDE4 /* Assets.xcassets */,
 				756343031F7AC3C80080EDE4 /* LaunchScreen.storyboard */,
 				756343061F7AC3C80080EDE4 /* Info.plist */,
-				751A05951F7C43090050F69F /* GoogleService-Info.plist */,
 			);
 			path = ACRide;
 			sourceTree = "<group>";
@@ -288,7 +285,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				756343051F7AC3C80080EDE4 /* LaunchScreen.storyboard in Resources */,
-				751A05961F7C43090050F69F /* GoogleService-Info.plist in Resources */,
 				756343021F7AC3C80080EDE4 /* Assets.xcassets in Resources */,
 				756343001F7AC3C80080EDE4 /* Main.storyboard in Resources */,
 			);
