@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		5AA52A820AA7BE6D890C56BF /* Pods_ACRide.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41B05D66BECA688BC871C57F /* Pods_ACRide.framework */; };
 		645BAE4A0A057080A22C9548 /* Pods_ACRideTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 835C3EB2733577B3FE3AD80E /* Pods_ACRideTests.framework */; };
+		751A059D1F7D8B140050F69F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 751A059C1F7D8B140050F69F /* GoogleService-Info.plist */; };
 		756342FB1F7AC3C80080EDE4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 756342FA1F7AC3C80080EDE4 /* AppDelegate.swift */; };
 		756342FD1F7AC3C80080EDE4 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 756342FC1F7AC3C80080EDE4 /* HomeViewController.swift */; };
 		756343001F7AC3C80080EDE4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 756342FE1F7AC3C80080EDE4 /* Main.storyboard */; };
@@ -21,7 +22,6 @@
 		756343241F7AECA50080EDE4 /* CircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 756343231F7AECA50080EDE4 /* CircleView.swift */; };
 		756343261F7AEDEF0080EDE4 /* RoundedShadowButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 756343251F7AEDEF0080EDE4 /* RoundedShadowButton.swift */; };
 		756343281F7AF5F50080EDE4 /* ContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 756343271F7AF5F50080EDE4 /* ContainerViewController.swift */; };
-		7563432B1F7AF85B0080EDE4 /* CenterVCDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7563432A1F7AF85B0080EDE4 /* CenterVCDelegate.swift */; };
 		7563432F1F7B038B0080EDE4 /* LeftSidePanelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7563432E1F7B038B0080EDE4 /* LeftSidePanelViewController.swift */; };
 		7571C0911F7C0F4B000F3DC7 /* UIVIew+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7571C0901F7C0F4B000F3DC7 /* UIVIew+Extension.swift */; };
 /* End PBXBuildFile section */
@@ -40,7 +40,7 @@
 		1F2A8B7AA65B488FEFA573CB /* Pods-ACRideTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ACRideTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ACRideTests/Pods-ACRideTests.debug.xcconfig"; sourceTree = "<group>"; };
 		3F21D1C7BCC3473BB5C73B23 /* Pods-ACRideTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ACRideTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ACRideTests/Pods-ACRideTests.release.xcconfig"; sourceTree = "<group>"; };
 		41B05D66BECA688BC871C57F /* Pods_ACRide.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ACRide.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		751A05981F7D63D50050F69F /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		751A059C1F7D8B140050F69F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		756342F71F7AC3C80080EDE4 /* ACRide.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ACRide.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		756342FA1F7AC3C80080EDE4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		756342FC1F7AC3C80080EDE4 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -57,7 +57,6 @@
 		756343231F7AECA50080EDE4 /* CircleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleView.swift; sourceTree = "<group>"; };
 		756343251F7AEDEF0080EDE4 /* RoundedShadowButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedShadowButton.swift; sourceTree = "<group>"; };
 		756343271F7AF5F50080EDE4 /* ContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerViewController.swift; sourceTree = "<group>"; };
-		7563432A1F7AF85B0080EDE4 /* CenterVCDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CenterVCDelegate.swift; sourceTree = "<group>"; };
 		7563432E1F7B038B0080EDE4 /* LeftSidePanelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeftSidePanelViewController.swift; sourceTree = "<group>"; };
 		7571C0901F7C0F4B000F3DC7 /* UIVIew+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIVIew+Extension.swift"; sourceTree = "<group>"; };
 		7EAB99E70768942ED5F37F21 /* Pods-ACRide.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ACRide.release.xcconfig"; path = "Pods/Target Support Files/Pods-ACRide/Pods-ACRide.release.xcconfig"; sourceTree = "<group>"; };
@@ -94,6 +93,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		751A059B1F7D8AB00050F69F /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				751A059C1F7D8B140050F69F /* GoogleService-Info.plist */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
 		756342EE1F7AC3C70080EDE4 = {
 			isa = PBXGroup;
 			children = (
@@ -117,8 +124,8 @@
 		756342F91F7AC3C80080EDE4 /* ACRide */ = {
 			isa = PBXGroup;
 			children = (
+				751A059B1F7D8AB00050F69F /* Assets */,
 				7571C08F1F7C0F1C000F3DC7 /* Extensions */,
-				756343291F7AF8380080EDE4 /* Protocols */,
 				7563431C1F7AD5B00080EDE4 /* Models */,
 				7563431B1F7AD5AB0080EDE4 /* Views */,
 				7563431A1F7AD5A40080EDE4 /* Controllers */,
@@ -127,7 +134,6 @@
 				756343011F7AC3C80080EDE4 /* Assets.xcassets */,
 				756343031F7AC3C80080EDE4 /* LaunchScreen.storyboard */,
 				756343061F7AC3C80080EDE4 /* Info.plist */,
-				751A05981F7D63D50050F69F /* GoogleService-Info.plist */,
 			);
 			path = ACRide;
 			sourceTree = "<group>";
@@ -168,14 +174,6 @@
 			children = (
 			);
 			path = Models;
-			sourceTree = "<group>";
-		};
-		756343291F7AF8380080EDE4 /* Protocols */ = {
-			isa = PBXGroup;
-			children = (
-				7563432A1F7AF85B0080EDE4 /* CenterVCDelegate.swift */,
-			);
-			path = Protocols;
 			sourceTree = "<group>";
 		};
 		7571C08F1F7C0F1C000F3DC7 /* Extensions */ = {
@@ -287,6 +285,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				756343051F7AC3C80080EDE4 /* LaunchScreen.storyboard in Resources */,
+				751A059D1F7D8B140050F69F /* GoogleService-Info.plist in Resources */,
 				756343021F7AC3C80080EDE4 /* Assets.xcassets in Resources */,
 				756343001F7AC3C80080EDE4 /* Main.storyboard in Resources */,
 			);
@@ -416,7 +415,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7563432B1F7AF85B0080EDE4 /* CenterVCDelegate.swift in Sources */,
 				756343261F7AEDEF0080EDE4 /* RoundedShadowButton.swift in Sources */,
 				756343241F7AECA50080EDE4 /* CircleView.swift in Sources */,
 				756343281F7AF5F50080EDE4 /* ContainerViewController.swift in Sources */,

@@ -5,8 +5,7 @@ class HomeViewController: UIViewController, MKMapViewDelegate {
 
     @IBOutlet weak var requestButton: RoundedShadowButton!
     @IBOutlet weak var mapView: MKMapView!
-    
-    var delegate : CenterVCDelegate?
+    var delegate : ContainerViewControllerProtocols?
 
     override func viewDidLoad() {
         super.viewDidLoad()
